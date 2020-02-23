@@ -37,6 +37,9 @@ compile: ${RUN_DIR}
 wave: ${RUN_DIR}
 	make wave TESTCASE=${TESTCASE} RUN_DIR=${RUN_DIR} -C ${RUN_DIR}
 
+debug: ${RUN_DIR}
+	make debug TESTCASE=${TESTCASE} RUN_DIR=${RUN_DIR} -C ${RUN_DIR}
+
 run_test: compile
 	make run DUMPWAVE=${DUMPWAVE} TESTCASE=${TESTCASE} RUN_DIR=${RUN_DIR} -C ${RUN_DIR}
 
