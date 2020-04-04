@@ -245,8 +245,9 @@ module tb_top();
     $value$plusargs("DUMPWAVE=%d",dumpwave);
     if(dumpwave != 0)begin
          // To add your waveform generation function
-          $fsdbDumpfile("dump.fsdb");
-	        $fsdbDumpvars("+all");
+         // tanwubin add to support vcs
+	 $fsdbDumpfile("dump.fsdb");
+	 $fsdbDumpvars("+all");
     end
   end
 
